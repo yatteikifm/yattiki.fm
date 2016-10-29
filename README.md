@@ -48,7 +48,7 @@ Audacityで読み込んだファイルをmp3形式のファイルに書き出す
 
 1. `_posts/2016-10-30-yatteiki-first.md` のようなパターンでMarkdownファイルを配置する
 1. 音源は `audio/2016-10-30-yatteiki-first.mp3` のようなパターンでMP3ファイルを配置する
-1. `gh-pages` ブランチにpushすると https://yatteikifm.github.io/ に配置される
+1. `master` ブランチにpushすると https://yatteikifm.github.io/ に配置される
 
 ### ローカルでの確認方法
 
