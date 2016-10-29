@@ -20,9 +20,11 @@ macOS用の仮想オーディオデバイス。LadioCastと組み合わせて利
 
 https://itunes.apple.com/jp/app/ladiocast/id411213048?mt=12
 
-macOS用のソフトウェアミキサー。Soundflowerと組み合わせて、マイクの入力とmacOSの出力をミックスするのに使う。
+macOS用のソフトウェアミキサー。マイクの入力とmacOSの出力をミックスするのに使う。
 
-![image](https://pbs.twimg.com/media/Cv7fUPDUMAAyeYv.jpg:orig)
+![image](/images/sound-settings.png)
+
+![image](/images/sound-pipeline.png)
 
 ### QuickTime Player
 
@@ -32,14 +34,13 @@ macOS用のソフトウェアミキサー。Soundflowerと組み合わせて、�
 
 http://www.audacityteam.org/
 
-QuickTime Playerで録音した .m4a 形式のファイルを読み込み、.mp3 形式で書き出す。
-GitHubは通常は100MB以下のファイルしか配置できないので、ビットレート90kbps以下程度で書き出すと良さ気。
+QuickTime Playerで録音したm4a形式のファイルを読み込み、.mp3形式で書き出す。
 
 ### Lame for Audacity
 
 http://lame.buanzo.org/
 
-Audacityで読み込んだファイルを .mp3 形式のファイルに書き出すのに必要なプラグイン。
+Audacityで読み込んだファイルをmp3形式のファイルに書き出すのに必要なプラグイン。
 
 ## サイトの編集方法
 
