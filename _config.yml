@@ -2,4 +2,4 @@ language: ja
 markdown: kramdown
 sass:
   sass_dir: css
-title: yatteiki.fm
+title: やっていきFM
