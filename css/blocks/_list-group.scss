@@ -1,0 +1,13 @@
+.list-group-element {
+  padding-bottom: 16px;
+  padding-top: 16px;
+
+  &-footer {
+    color: $color-text-dark-secondary;
+    font-size: 0.9em;
+  }
+
+  &-heading {
+    font-size: 1.2rem;
+  }
+}

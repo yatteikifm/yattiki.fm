@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang={{ site.language }}>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main>
+      <div class="main-section">
+        <div class="container">
+          <article class="article">
+            <header class="article-header">
+              <h1 class="article-header-heading">
+                {{ page.title }}
+              </h1>
+              <div class="article-header-note">
+                {{ page.date | date: "%Y年%m月%d日" }}
+              </div>
+            </header>
+            <div class="markdown">
+              {{ content }}
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+  </body>
+  {% include footer.html %}
+</html>

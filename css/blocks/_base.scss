@@ -1,0 +1,16 @@
+a {
+  &,
+  &:active,
+  &:focus,
+  &:hover {
+    color: #427ea3;
+    text-decoration: none;
+  }
+}
+
+body {
+  color: $color-text-dark-primary;
+  font-family: "Noto Sans Japanese", YuGothic, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+}

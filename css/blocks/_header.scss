@@ -1,0 +1,21 @@
+.header {
+  padding-bottom: 32px;
+  padding-top: 32px;
+
+  &-description {
+    color: $color-text-dark-secondary;
+  }
+
+  &-heading {
+    font-size: 32px;
+
+    a {
+      &,
+      &:active,
+      &:focus,
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+}
