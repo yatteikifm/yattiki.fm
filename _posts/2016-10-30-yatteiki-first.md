@@ -16,7 +16,7 @@ date: 2016-10-30 00:00:00 +0900
 - [FavMedia](https://www.favmedia.me/)
 - [Yacho](https://yacho.club/)
 - [Kopilist](https://kopilist.com/)
-- [25歳定年説によせて - ✘╹◡╹✘](http://r7kamura.hatenablog.com/entry/2014/12/21/181831)
+- [25歳定年説によせて](http://r7kamura.hatenablog.com/entry/2014/12/21/181831)
 - [ChatCast（チャットキャスト）](https://chatca.st/)
 - [かなめい株式会社【Kanamei】](http://kanamei.co.jp/)
 - [Increments株式会社](http://increments.co.jp/)
