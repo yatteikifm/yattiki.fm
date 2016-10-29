@@ -28,7 +28,7 @@ macOS用のソフトウェアミキサー。マイクの入力とmacOSの出力�
 
 ### QuickTime Player
 
-録音用のアプリ。macOCに最初からインストールされている。
+録音用のアプリ。macOSに最初からインストールされている。
 
 ### Audacity
 
