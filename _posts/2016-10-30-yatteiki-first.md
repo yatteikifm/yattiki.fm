@@ -1,15 +1,18 @@
 ---
-layout: article
-title: "1. やっていきはじめ"
+audio_file_path: /audio/2016-10-30-yatteiki-first.mp3
+audio_file_size: 28010160
 date: 2016-10-30 00:00:00 +0900
 description: soramugi、9m、r7kamura の3人でやっていき方について話しました。
 duration: "58:21"
-audio_file_size: 28010160
+layout: article
+title: "1. やっていきはじめ"
 ---
 
-[soramugi](https://twitter.com/soramugi)、[9m](https://twitter.com/9m)、[r7kamura](https://twitter.com/r7kamura) の3人でやっていき方について話しました。
+## Starring
 
-<audio preload="auto" controls="" src="/audio/2016-10-30-yatteiki-first.mp3"></audio>
+- [soramugi](https://twitter.com/soramugi)
+- [9m](https://twitter.com/9m)
+- [r7kamura](https://twitter.com/r7kamura)
 
 ## Show Notes
 
