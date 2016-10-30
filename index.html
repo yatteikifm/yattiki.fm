@@ -8,6 +8,9 @@ layout: default
       <h1 class="list-group-element-heading">
         <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
       </h1>
+      <p>
+        {{ post.description }}
+      </p>
       <footer class="list-group-element-footer">
         {{ post.date | date: "%Y年%m月%d日" }}
       </footer>
