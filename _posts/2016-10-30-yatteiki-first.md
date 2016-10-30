@@ -3,8 +3,8 @@ layout: article
 title: "1. やっていきはじめ"
 date: 2016-10-30 00:00:00 +0900
 description: soramugi、9m、r7kamura の3人でやっていき方について話しました。
-duration: "1:24:22"
-audio_file_size: 36939406
+duration: "58:21"
+audio_file_size: 28010160
 ---
 
 [soramugi](https://twitter.com/soramugi)、[9m](https://twitter.com/9m)、[r7kamura](https://twitter.com/r7kamura) の3人でやっていき方について話しました。
