@@ -20,6 +20,18 @@
                 {{ page.description }}
               </p>
               <audio preload="auto" controls="" src="{{ page.audio_file_path }}"></audio>
+              <h2>
+                Starring
+              </h2>
+              <div class="article-actors">
+                {% for actor in page.actors %}
+                  <a href="{{ actor.url }}" class="article-actors-element">
+                    <img src="{{ actor.image_url }}" alt="{{ actor.name }}" class="article-actors-element-image" width="96" height="96">
+                    <br>
+                    {{ actor.name }}
+                  </a>
+                {% endfor %}
+              </div>
               {{ content }}
             </div>
           </article>

@@ -1,4 +1,26 @@
 .article {
+  &-actors {
+    &-element {
+      display: inline-block;
+      text-align: center;
+
+      &,
+      &:active,
+      &:focus,
+      &:hover {
+        text-decoration: none !important;
+      }
+
+      & + & {
+        margin-left: 16px;
+      }
+
+      &-image {
+        border-radius: 50%;
+      }
+    }
+  }
+
   &-header {
     margin-bottom: 24px;
 
