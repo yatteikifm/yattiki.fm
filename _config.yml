@@ -1,6 +1,11 @@
 author: Yudai Tsuyuzaki
 description: 個人開発者達がやっていくポッドキャスト
 email: soramugi.chika@gmail.com
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
 keywords: tech,technology,yatteiki,programming,mobile,web,development,developer,software
 language: ja
 markdown: kramdown
@@ -8,4 +13,3 @@ sass:
   sass_dir: css
 title: yatteiki.fm
 url: https://yatteikifm.github.io
-exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'vendor/']
