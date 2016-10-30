@@ -8,3 +8,4 @@ sass:
   sass_dir: css
 title: yattiki.fm
 url: https://yatteikifm.github.io
+exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'vendor/']
