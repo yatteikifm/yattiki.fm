@@ -10,4 +10,16 @@
   &-heading {
     font-size: 1.2rem;
   }
+
+  &-images {
+    margin-top: 8px;
+
+    &-element {
+      border-radius: 50%;
+
+      & + & {
+        margin-left: 4px;
+      }
+    }
+  }
 }
