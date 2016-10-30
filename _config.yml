@@ -11,5 +11,6 @@ language: ja
 markdown: kramdown
 sass:
   sass_dir: css
+timezone: Asia/Tokyo
 title: yatteiki.fm
 url: https://yatteikifm.github.io
