@@ -6,11 +6,12 @@
 @import "blocks/variables";
 
 // ABC order
-@import "blocks/base";
 @import "blocks/article";
+@import "blocks/base";
+@import "blocks/card";
 @import "blocks/container";
-@import "blocks/header";
 @import "blocks/footer";
+@import "blocks/header";
 @import "blocks/list-group";
 @import "blocks/main";
 @import "blocks/markdown";

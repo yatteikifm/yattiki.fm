@@ -6,8 +6,8 @@
     <main>
       <div class="main-section">
         <div class="container">
-          <article class="article">
-            <header class="article-header">
+          <article class="article card">
+            <header class="article-header card-header">
               <h1 class="article-header-heading">
                 {{ page.title }}
               </h1>
@@ -15,7 +15,7 @@
                 {{ page.date | date: "%Y年%m月%d日" }}
               </div>
             </header>
-            <div class="markdown">
+            <div class="card-body markdown">
               <p>
                 {{ page.description }}
               </p>
@@ -26,7 +26,7 @@
               <div class="article-actors">
                 {% for actor in page.actors %}
                   <a href="{{ actor.url }}" class="article-actors-element">
-                    <img src="{{ actor.image_url }}" alt="{{ actor.name }}" class="article-actors-element-image" width="96" height="96">
+                    <img src="{{ actor.image_url }}" alt="{{ actor.name }}" class="article-actors-element-image" width="72" height="72">
                     <br>
                     {{ actor.name }}
                   </a>

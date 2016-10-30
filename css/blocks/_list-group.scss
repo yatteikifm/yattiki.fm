@@ -1,6 +1,10 @@
 .list-group-element {
+  display: block;
+  line-height: 1.7;
   padding-bottom: 16px;
   padding-top: 16px;
+  position: relative;
+
 
   &-footer {
     color: $color-text-dark-secondary;
