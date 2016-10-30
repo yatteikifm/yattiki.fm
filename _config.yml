@@ -9,6 +9,7 @@ exclude:
 keywords: tech,technology,yatteiki,programming,mobile,web,development,developer,software
 language: ja
 markdown: kramdown
+permalink: /episode/:title
 sass:
   sass_dir: css
 timezone: Asia/Tokyo
