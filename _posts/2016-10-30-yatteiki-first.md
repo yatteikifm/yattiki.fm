@@ -10,10 +10,10 @@ actors:
     name: r7kamura
     url: https://twitter.com/r7kamura
 audio_file_path: /audio/2016-10-30-yatteiki-first.mp3
-audio_file_size: 28010160
+audio_file_size: 25376679
 date: 2016-10-30 00:00:00 +0900
 description: soramugi、9m、r7kamura の3人でやっていき方について話しました。
-duration: "58:21"
+duration: "58:20"
 layout: article
 title: "1. やっていきはじめ"
 ---
