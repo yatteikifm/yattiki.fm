@@ -6,6 +6,6 @@ language: ja
 markdown: kramdown
 sass:
   sass_dir: css
-title: yattiki.fm
+title: yatteiki.fm
 url: https://yatteikifm.github.io
 exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'vendor/']
