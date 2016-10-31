@@ -21,7 +21,15 @@
               <p>
                 {{ page.description }}
               </p>
-              <audio preload="auto" controls="" src="{{ page.audio_file_path }}"></audio>
+              <audio
+                preload="auto"
+                controls=""
+                src="{{ page.audio_file_path }}"
+                class="mejs-player"
+                data-mejsoptions='{"alwaysShowControls": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}'
+                width="100%"
+              >
+              </audio>
               <h2>
                 Starring
               </h2>
@@ -40,6 +48,8 @@
         </div>
       </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js"></script>
   </body>
   {% include footer.html %}
 </html>
