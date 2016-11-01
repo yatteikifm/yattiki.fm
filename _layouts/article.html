@@ -21,15 +21,20 @@
               <p>
                 {{ page.description }}
               </p>
-              <audio
-                preload="auto"
-                controls=""
-                src="{{ page.audio_file_path }}"
-                class="mejs-player"
-                data-mejsoptions='{"alwaysShowControls": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}'
-                width="100%"
-              >
-              </audio>
+              <p>
+                <audio
+                  preload="auto"
+                  controls=""
+                  src="{{ page.audio_file_path }}"
+                  class="mejs-player"
+                  data-mejsoptions='{"alwaysShowControls": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}'
+                  width="100%"
+                >
+                </audio>
+              </p>
+              <p>
+                <a href="https://itunes.apple.com/jp/podcast/yatteiki.fm/id1170904671?mt=2">iTunes</a>で購読するか、<a href="{{ page.audio_file_path }}">DL</a>してお楽しみ下さい。
+              </p>
               <h2>
                 Starring
               </h2>
