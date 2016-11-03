@@ -1,33 +1,6 @@
 .article {
-  &-actors {
-    &-element {
-      display: inline-block;
-      text-align: center;
-
-      &,
-      &:active,
-      &:focus,
-      &:hover {
-        text-decoration: none !important;
-      }
-
-      & + & {
-        margin-left: 16px;
-      }
-
-      &-image {
-        border-radius: 50%;
-      }
-    }
-  }
-
   &-header {
     margin-bottom: 24px;
-    text-align: center;
-
-    &-heading {
-      font-size: 2rem;
-    }
 
     &-note {
       color: $color-text-dark-secondary;

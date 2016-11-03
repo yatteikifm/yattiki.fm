@@ -6,21 +6,27 @@
     padding-right: ($width-gutter / 2);
     position: relative;
   }
-}
 
-@for $i from 1 through 12 {
   .column-small-#{$i} {
     @media (min-width: $width-screen-small-minimum) {
       float: left;
       width: percentage($i / 12);
     }
   }
-}
 
-@for $i from 1 through 12 {
+  .column-small-push-#{$i} {
+    @media (min-width: $width-screen-small-minimum) {
+      left: percentage($i / 12);
+    }
+  }
+
   .column-extra-small-#{$i} {
     float: left;
     width: percentage($i / 12);
+  }
+
+  .column-extra-small-push-#{$i} {
+    left: percentage($i / 12);
   }
 }
 
