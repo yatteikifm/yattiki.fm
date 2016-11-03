@@ -10,7 +10,9 @@
 
   &-heading {
     color: $color-text-light-primary;
+    text-shadow: 0 1px 5px black;
     font-size: 2.5rem;
+    font-weight: 500;
 
     a {
       &,
