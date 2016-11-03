@@ -31,16 +31,14 @@ title: やっていき宣言
             </p>
           </section>
           <section class="card-body">
-            <div class="row">
-              {% for actor_data in site.actors %}
-                {% assign actor = actor_data[1] %}
-                <a href="{{ actor.url }}" class="actor" target="_blank">
-                  <img src="{{ actor.image_url }}" alt="{{ actor.name }}" class="actor-image" width="72" height="72">
-                  <br>
-                  {{ actor.name }}
-                </a>
-              {% endfor %}
-            </div>
+            {% for actor_data in site.actors %}
+              {% assign actor = actor_data[1] %}
+              <a href="{{ actor.url }}" class="actor" target="_blank">
+                <img src="{{ actor.image_url }}" alt="{{ actor.name }}" class="actor-image" width="72" height="72">
+                <br>
+                {{ actor.name }}
+              </a>
+            {% endfor %}
           </section>
         </article>
       </div>
