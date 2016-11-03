@@ -1,4 +1,7 @@
-.main-section {
-  padding-bottom: 48px;
-  padding-top: 48px;
+.main {
+  &-section {
+    background-color: #fff;
+    padding-bottom: 48px;
+    padding-top: 48px;
+  }
 }

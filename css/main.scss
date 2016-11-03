@@ -3,7 +3,8 @@
 
 // Fixed order
 @import "blocks/reset";
-@import "blocks/variables";
+@import "_mixins";
+@import "_variables";
 
 // ABC order
 @import "blocks/article";
@@ -15,3 +16,4 @@
 @import "blocks/list-group";
 @import "blocks/main";
 @import "blocks/markdown";
+@import "blocks/responsive";
