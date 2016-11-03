@@ -39,7 +39,8 @@
                 出演者
               </h2>
               <div class="article-actors">
-                {% for actor in page.actors %}
+                {% for actor_id in page.actor_ids %}
+                  {% assign actor = site.actors[actor_id] %}
                   <a href="{{ actor.url }}" class="article-actors-element">
                     <img src="{{ actor.image_url }}" alt="{{ actor.name }}" class="article-actors-element-image" width="72" height="72">
                     <br>

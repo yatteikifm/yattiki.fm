@@ -1,3 +1,21 @@
+# ASCII order
+actors:
+  9m:
+    image_url: https://storage.kksg.net/images/9m.png
+    name: 9m
+    url: https://twitter.com/9m
+  itopoid:
+    image_url: https://pbs.twimg.com/profile_images/660494969388449793/qL-fj-4e_400x400.png
+    name: itopoid
+    url: https://twitter.com/itopoid
+  r7kamura:
+    image_url: https://pbs.twimg.com/profile_images/790456968880062464/NWHT0Xn1_400x400.jpg
+    name: r7kamura
+    url: https://twitter.com/r7kamura
+  soramugi:
+    image_url: https://pbs.twimg.com/profile_images/2863509226/5ebf54d483f89f1811fc0faa57acdcbe_400x400.jpeg
+    name: soramugi
+    url: https://twitter.com/soramugi
 author: やっていき手
 description: 個人開発者達がやっていくPodcast
 description_long: ものづくり、仕事、生活などをやっていく話題を中心に、いま現在やっている個人開発者達が話す、やっていき手のためのPodcast
