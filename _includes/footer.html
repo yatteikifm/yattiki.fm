@@ -22,6 +22,13 @@
           <div class="footer-sections-element-description">
             {{ site.title }} への感想や質問などは、Twitterでハッシュタグ <a href="https://twitter.com/search?q=%23{{ site.hashtag }}" target="_blank">#{{ site.hashtag }}</a> を付けて投稿していただけると助かります。
           </div>
+          <a href="https://twitter.com/intent/tweet?hashtags=yatteikifm&url={{ site.url }}"
+            onClick="window.open(encodeURI(decodeURI(this.href)),
+            'tweetwindow',
+            'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=1'
+            ); return false;">
+            <img src="/images/tweet-button.png" alt="twitterでつぶやく" height="27">
+          </a>
         </section>
         <section class="column-small-4 footer-sections-element">
           <h1 class="footer-sections-element-heading">
