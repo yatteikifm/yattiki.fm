@@ -2,6 +2,16 @@
   <meta charset="utf-8">
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta name="viewport" content="width=device-width">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="{{ site.description }}" />
+  <meta name="twitter:image" content="{{ site.url }}/images/itunes-artwork-240.jpg" />
+  <meta name="twitter:title" content="{{ site.title }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="og:image" content="{{ site.url }}/images/itunes-artwork-240.jpg" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:type" content="blog" />
+  <meta property="og:url" content="{{ site.url }}" />
   <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
