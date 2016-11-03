@@ -15,6 +15,7 @@ actors:
     image_url: https://pbs.twimg.com/profile_images/660494969388449793/qL-fj-4e_400x400.png
     name: itopoid
     url: https://twitter.com/itopoid
+android_podcast_subscription_url: http://subscribeonandroid.com/yatteikifm.github.io/feed.xml
 author: やっていき手
 description: 個人開発者達がやっていくPodcast
 description_long: ものづくり、仕事、生活などをやっていく話題を中心に、いま現在やっている個人開発者達が話す、やっていき手のためのPodcast
@@ -25,10 +26,12 @@ exclude:
   - README.md
   - vendor
 hashtag: yatteikifm
+itunes_podcast_url: https://itunes.apple.com/jp/podcast/yatteiki.fm/id1170904671?mt=2
 keywords: tech,technology,yatteiki,programming,mobile,web,development,developer,software
 language: ja
 markdown: kramdown
 permalink: /episode/:title
+pushdog_subscription_url: https://push.dog/subscribe?url=https%3A%2F%2Fyatteikifm.github.io%2Ffeed.xml
 sass:
   sass_dir: css
 timezone: Asia/Tokyo
