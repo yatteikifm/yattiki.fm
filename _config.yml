@@ -1,11 +1,13 @@
 author: やっていき手
-description: 個人開発者達がやっていくポッドキャスト
+description: 個人開発者達がやっていくPodcast
+description_long: ものづくり、仕事、生活などをやっていく話題を中心に、いま現在やっている個人開発者達が話す、やっていき手のためのPodcast
 email: soramugi.chika@gmail.com
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - vendor
+hashtag: yatteikifm
 keywords: tech,technology,yatteiki,programming,mobile,web,development,developer,software
 language: ja
 markdown: kramdown
