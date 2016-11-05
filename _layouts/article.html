@@ -50,7 +50,31 @@
                   </a>
                 {% endfor %}
               </div>
+
               {{ content }}
+
+              {% if page.slideshows %}
+                <h2>
+                  スライドショー
+                </h2>
+                <div class="article-slideshow">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      {% for slideshow in page.slideshows %}
+                        <div class="swiper-slide">
+                          <div class="swiper-zoom-container">
+                            <img src="{{ slideshow }}">
+                          </div>
+                        </div>
+                      {% endfor %}
+                    </div>
+                   <div class="swiper-pagination swiper-pagination-white"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+              {% endif %}
+
             </section>
             <footer class="article-footer">
               <a href="https://twitter.com/intent/tweet?hashtags=yatteikifm&url={{ site.url }}{{ page.url }}">
@@ -61,8 +85,21 @@
         </div>
       </div>
     </main>
+
     {% include footer.html %}
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js"></script>
+
+    {% if page.slideshows %}
+      <script>
+        new Swiper('.swiper-container', {
+          zoom: true,
+          pagination: '.swiper-pagination',
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev'
+        });
+      </script>
+    {% endif %}
   </body>
 </html>
