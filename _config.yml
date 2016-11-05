@@ -1,18 +1,18 @@
 actors:
   r7kamura:
-    image_url: https://pbs.twimg.com/profile_images/790456968880062464/NWHT0Xn1_400x400.jpg
+    image_url: /images/actors/r7kamura.jpg
     name: r7kamura
     url: https://twitter.com/r7kamura
   9m:
-    image_url: https://storage.kksg.net/images/9m.png
+    image_url: /images/actors/9m.png
     name: 9m
     url: https://twitter.com/9m
   soramugi:
-    image_url: https://pbs.twimg.com/profile_images/2863509226/5ebf54d483f89f1811fc0faa57acdcbe_400x400.jpeg
+    image_url: /images/actors/soramugi.jpg
     name: soramugi
     url: https://twitter.com/soramugi
   itopoid:
-    image_url: https://pbs.twimg.com/profile_images/660494969388449793/qL-fj-4e_400x400.png
+    image_url: /images/actors/itopoid.png
     name: itopoid
     url: https://twitter.com/itopoid
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
