@@ -23,11 +23,11 @@
               </p>
               <p>
                 <audio
-                  preload="auto"
-                  controls=""
-                  src="{{ page.audio_file_path }}"
                   class="mejs-player"
+                  controls=""
                   data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}'
+                  preload="auto"
+                  src="{{ page.audio_file_path }}"
                   width="100%"
                 >
                 </audio>
@@ -50,9 +50,7 @@
                   </a>
                 {% endfor %}
               </div>
-
               {{ content }}
-
               {% if page.slideshows %}
                 <h2>
                   スライドショー
@@ -74,23 +72,17 @@
                   </div>
                 </div>
               {% endif %}
-
             </section>
             <footer class="article-footer">
-              <a href="https://twitter.com/intent/tweet?hashtags=yatteikifm&url={{ site.url }}{{ page.url }}&text={{ page.title }}">
-                <img src="/images/tweet-button.png" alt="twitterでつぶやく" height="27">
+              <a class="twitter-share-button" href="https://twitter.com/intent/tweet?hashtags={{ site.hashtag }}&url={{ site.url }}{{ page.url }}&text={{ page.title }}">
+                Tweet
               </a>
             </footer>
           </article>
         </div>
       </div>
     </main>
-
     {% include footer.html %}
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js"></script>
-
     {% if page.slideshows %}
       <script>
         new Swiper('.swiper-container', {
