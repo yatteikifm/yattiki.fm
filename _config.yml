@@ -15,6 +15,10 @@ actors:
     image_url: /images/actors/itopoid.png
     name: itopoid
     url: https://twitter.com/itopoid
+  hotchemi:
+    image_url: /images/actors/hotchemi.png
+    name: hotchemi
+    url: https://twitter.com/hotchemi
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: 個人開発者達がやっていくPodcast
