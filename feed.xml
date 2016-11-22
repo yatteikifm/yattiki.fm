@@ -27,9 +27,7 @@
         <link>{{ site.url }}{{ post.url }}</link>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
         <description>
-          &lt;p&gt;
-            {{ post.description | xml_escape }}
-          &lt;/p&gt;
+          &lt;p&gt;{{ post.description | xml_escape }}&lt;/p&gt;
           {{ post.content | xml_escape }}
         </description>
         <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
