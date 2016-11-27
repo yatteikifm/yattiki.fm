@@ -19,6 +19,10 @@ actors:
     image_url: /images/actors/hotchemi.png
     name: hotchemi
     url: https://twitter.com/hotchemi
+  gong023:
+    image_url: /images/actors/gong023.jpg
+    name: gong023
+    url: https://twitter.com/gong023
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: 個人開発者達がやっていくPodcast
