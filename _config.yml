@@ -27,6 +27,10 @@ actors:
     image_url: /images/actors/Biacco42.png
     name: Biacco42
     url: https://twitter.com/Biacco42
+  ninjinkun:
+    image_url: /images/actors/ninjinkun.png
+    name: ninjinkun
+    url: https://twitter.com/ninjinkun
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: 個人開発者達がやっていくPodcast
