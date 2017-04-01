@@ -1,0 +1,79 @@
+---
+layout: yatteikiba
+title: 第１回やっていき場
+slideshows:
+  - /images/slideshows/22/yatteikiba1.jpg
+  - /images/slideshows/22/yatteikiba2.jpg
+  - /images/slideshows/22/yatteikiba3.jpg
+---
+
+<div class="section1">
+  <div class="container">
+    <img src="/images/slideshows/22/yatteikiba0.jpg"  />
+    <p>
+      やっていっている人たちのモクモク作業会場、やっていき場がはじまります
+    </p>
+  </div>
+</div>
+
+<div class="section2">
+  <div class="section2-inner">
+    <h3>第1回やっていき場</h3>
+    <p>
+      やっていき場本格開催決定！もくもく作業場、フリマ、Podcast公開収録などを予定しています。
+    </p>
+    <dl>
+      <dt>開催日時</dt>
+      <dd>4月中（未定）</dd>
+      <dt>開催場所</dt>
+      <dd>下赤塚某所</dd>
+    </dl>
+  </div>
+</div>
+<div class="section3">
+  <div class="section3-inner">
+    <h3>FAQ</h3>
+    <dl>
+      <dt>Q. これは何のイベントなんですか？</dt>
+      <dd>A. なんなんでしょうか</dd>
+      <dt>Q. 何時に行けばいいですか？</dt>
+      <dd>A. 開催時間中ならいつでも</dd>
+    </dl>
+  </div>
+</div>
+
+<div class="section4">
+  <div class="container">
+    <h3>やっていき場プレオープンの画像</h3>
+    <div class="article-slideshow">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          {% for slideshow in page.slideshows %}
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img src="{{ slideshow }}">
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+       <div class="swiper-pagination swiper-pagination-white"></div>
+       <div class="swiper-button-prev"></div>
+       <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+
+<script>
+new Swiper('.swiper-container', {
+  zoom: true,
+  pagination: '.swiper-pagination',
+  nextButton: '.swiper-button-next',
+  prevButton: '.swiper-button-prev'
+});
+</script>

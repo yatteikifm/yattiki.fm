@@ -1,0 +1,123 @@
+---
+---
+
+// Fixed order
+@import "blocks/reset";
+@import "_mixins";
+@import "_variables";
+
+// ABC order
+@import "blocks/actor";
+@import "blocks/article";
+@import "blocks/base";
+@import "blocks/card";
+@import "blocks/container";
+@import "blocks/footer";
+@import "blocks/header";
+@import "blocks/list-group";
+@import "blocks/main";
+@import "blocks/markdown";
+@import "blocks/responsive";
+@import "blocks/utilities";
+@import "blocks/swiper";
+
+.main {
+  padding-top: 0;
+  .container img {
+    width: 100%;
+  }
+  .section1 {
+    height: 800px;
+    text-align: center;
+    p {
+      font-size: 20px;
+      margin-top: 50px;
+    }
+  }
+  .section2 {
+    background: url('/images/yatteikiba/yatteiki-cafe.jpg');
+    height: 800px;
+    background-size: cover;
+    .section2-inner {
+      height: 100%;
+      background: rgba(56, 56, 56, 0.5);
+      width: 50%;
+      margin-left: 50%;
+      color: #FFF;
+      padding: 50px;
+    }
+    h3 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    dl,
+    dt,
+    dd {
+      box-sizing: border-box;
+    }
+    dl {
+      border-right: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+    }
+    dt,
+    dd {
+      padding: 10px 10px 0 10px;
+      border-top: 1px solid #ccc;
+    }
+    dt {
+      width: 40%;
+      float: left;
+    }
+    dd {
+      //background: #fff;
+      margin-left: 40%;
+      padding-bottom: 10px;
+      border-left: 1px solid #ccc;
+    }
+    dd:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .section3 {
+    background: url('/images/yatteikiba/yatteiki-beya.jpg');
+    height: 800px;
+    background-size: cover;
+    .section3-inner {
+      height: 100%;
+      background: rgba(56, 56, 56, 0.5);
+      width: 50%;
+      color: #FFF;
+      padding: 50px;
+    }
+    h3 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 30px;
+    }
+    dd {
+      margin-bottom: 20px;
+    }
+  }
+
+  .section4 {
+    padding-top: 50px;
+    text-align: center;
+    h3 {
+      font-size: 25px;
+    }
+    .article-slideshow {
+      max-width: 600px;
+      height: 400px;
+      margin: 50px auto;
+    }
+  }
+}
