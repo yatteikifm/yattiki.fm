@@ -52,7 +52,11 @@
                 </a>
               {% endfor %}
             </div>
-            {{ content }}
+            {% if content contains '<a href=' %}
+                {{ content | replace:'<a','<a target="_blank"' }}
+            {% else %}
+                {{ content }}
+            {% endif %}
             {% if page.slideshows %}
               <h2>
                 スライドショー
