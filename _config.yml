@@ -31,6 +31,10 @@ actors:
     image_url: /images/actors/ninjinkun.png
     name: ninjinkun
     url: https://twitter.com/ninjinkun
+  kir1ca:
+    image_url: /images/actors/kir1ca.jpg
+    name: kir1ca
+    url: https://twitter.com/kir1ca
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: 個人開発者達がやっていくPodcast
