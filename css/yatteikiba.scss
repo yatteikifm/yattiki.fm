@@ -29,14 +29,6 @@ body {
   padding: 0;
   max-width: 800px;
   margin: 0 auto;
-  .main-content {
-    //box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    border: 2px solid #eee;
-  }
-  .section2, .section3, .section4 {
-    //border-right: 1px solid #000;
-    //border-left: 1px solid #000;
-  }
   .section1 {
     text-align: center;
     position: relative;
@@ -148,6 +140,18 @@ body {
     color: #FFF;
     a {
       color: #FFF;
+    }
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .main {
+    .main-content {
+      border: 2px solid #eee;
+    }
+    .section2-title {
+      margin-top: 40px;
+      margin-bottom: 55px;
     }
   }
 }
