@@ -2,23 +2,33 @@
 layout: yatteikiba
 title: 第１回やっていき場
 slideshows:
-  - /images/slideshows/22/yatteikiba1.jpg
-  - /images/slideshows/22/yatteikiba2.jpg
-  - /images/slideshows/22/yatteikiba3.jpg
+  - /images/yatteikiba/0/slideshows/1.jpg
+  - /images/yatteikiba/0/slideshows/2.jpg
+  - /images/yatteikiba/0/slideshows/3.jpg
+  - /images/yatteikiba/0/slideshows/4.jpg
+  - /images/yatteikiba/0/slideshows/5.jpg
+  - /images/yatteikiba/0/slideshows/6.jpg
+  - /images/yatteikiba/0/slideshows/7.jpg
+  - /images/yatteikiba/0/slideshows/8.png
 ---
 
 <div class="section1">
-  <div class="container">
-    <img src="/images/slideshows/22/yatteikiba0.jpg"  />
-    <p>
-      やっていっている人たちのモクモク作業会場、やっていき場がはじまります
-    </p>
+  <img src="/images/yatteikiba/main-visual1.jpg" />
+  <div class="section1-title">
+    <h1>やっていき場</h1>
   </div>
+  <p>
+    やっていっている人たちのモクモク作業会場、やっていき場がはじまります。
+  </p>
 </div>
 
 <div class="section2">
   <div class="section2-inner">
-    <h3>第1回やっていき場</h3>
+    <div class="section2-title">
+      <h3><span class="section2-title-inner">次回開催</span></h3>
+      <b>4月22日(土)</b>
+    </div>
+    <img src="/images/yatteikiba/key-visual1.png" />
     <p>
       やっていき場本格開催決定！もくもく作業場、フリマ、Podcast公開収録などを予定しています。
     </p>
@@ -30,21 +40,10 @@ slideshows:
     </dl>
   </div>
 </div>
-<div class="section3">
-  <div class="section3-inner">
-    <h3>FAQ</h3>
-    <dl>
-      <dt>Q. これは何のイベントなんですか？</dt>
-      <dd>A. なんなんでしょうか</dd>
-      <dt>Q. 何時に行けばいいですか？</dt>
-      <dd>A. 開催時間中ならいつでも</dd>
-    </dl>
-  </div>
-</div>
 
-<div class="section4">
+<div class="section3">
   <div class="container">
-    <h3>やっていき場プレオープンの画像</h3>
+    <h3>第0回 プレオープンの様子</h3>
     <div class="article-slideshow">
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -64,10 +63,45 @@ slideshows:
   </div>
 </div>
 
+<div class="section4">
+  <h3>アクセス</h3>
+  <div id="access-map"></div>
+  <div class="access-text">
+    <p>〒175-0092</p>
+    <p>東京都板橋区赤塚1-32-10</p>
+    <div class="access-text-train">
+    東武東上線: 下赤塚駅<br>
+    地下鉄副都心線/地下鉄有楽町線: 地下鉄赤塚駅
+    それぞれ徒歩7分程度
+    </div>
+  </div>
+</div>
+
+<footer class="yatteikiba-footer">
+  <div class="footer-text">
+    主催: <a href="/">yatteiki.fm</a>
+  </div>
+</footer>
+
+
 <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+<script>
+  function initMap() {
+    var uluru = {lat: 35.773448, lng: 139.647980};
+    var map = new google.maps.Map(document.getElementById('access-map'), {
+      zoom: 15,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnCsH4YJ2VfAndzEgg0-sO_POwoJ8eBSA&callback=initMap"></script>
 
 <script>
 new Swiper('.swiper-container', {
