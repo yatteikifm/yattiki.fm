@@ -21,14 +21,14 @@
 @import "blocks/utilities";
 @import "blocks/swiper";
 
-body {
-  background: #FFF;
-}
 .main {
   -webkit-font-smoothing: antialiased;
+  background: #FFF;
   padding: 0;
-  max-width: 800px;
   margin: 0 auto;
+  .container {
+    padding: 0;
+  }
   .section1 {
     text-align: center;
     position: relative;
@@ -144,11 +144,8 @@ body {
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width:800px) {
   .main {
-    .main-content {
-      border: 2px solid #eee;
-    }
     .section2-title {
       margin-top: 40px;
       margin-bottom: 55px;
