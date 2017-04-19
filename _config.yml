@@ -35,6 +35,10 @@ actors:
     image_url: /images/actors/kir1ca.jpg
     name: kir1ca
     url: https://twitter.com/kir1ca
+  sukechansan:
+    image_url: /images/actors/sukechansan.jpg
+    name: sukechansan
+    url: https://twitter.com/sukechansan
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: 個人開発者達がやっていくPodcast
