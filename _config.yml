@@ -39,6 +39,10 @@ actors:
     image_url: /images/actors/sukechansan.jpg
     name: sukechansan
     url: https://twitter.com/sukechansan
+  NONUMBERLESS:
+    image_url: /images/actors/NONUMBERLESS.jpg
+    name: NONUMBERLESS
+    url: http://nonumberless.com/
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: 個人開発者達がやっていくPodcast
