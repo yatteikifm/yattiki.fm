@@ -126,22 +126,6 @@
   </div>
 </div>
 
-<div class="section4">
-  <h3>アクセス</h3>
-  <div id="access-map"></div>
-  <div class="container">
-    <div class="access-text">
-      <p>〒175-0092</p>
-      <p>東京都板橋区赤塚1-32-10</p>
-      <div class="access-text-train">
-      東武東上線: 下赤塚駅<br>
-      地下鉄副都心線/地下鉄有楽町線: 地下鉄赤塚駅<br>
-      それぞれ徒歩7分程度
-      </div>
-    </div>
-  </div>
-</div>
-
 <footer class="yatteikiba-footer">
   <div class="footer-text">
     協賛: <a href="/">yatteiki.fm</a>
@@ -152,21 +136,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
-<script>
-  function initMap() {
-    var uluru = {lat: 35.773448, lng: 139.647980};
-    var map = new google.maps.Map(document.getElementById('access-map'), {
-      zoom: 15,
-      center: uluru
-    });
-    var marker = new google.maps.Marker({
-      position: uluru,
-      map: map
-    });
-  }
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnCsH4YJ2VfAndzEgg0-sO_POwoJ8eBSA&callback=initMap"></script>
-
 
 <script>
 new Swiper('.swiper-container', {
