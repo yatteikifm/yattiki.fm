@@ -1,14 +1,20 @@
-<header class="header">
-  <div class="header-overlay">
-    <div class="container">
-      <h1 class="header-heading">
-        <a href="/">
-          {{ site.title }}
-        </a>
-      </h1>
-      <div class="header-description">
-        {{ site.description }}
-      </div>
-    </div>
+<header class="header {% if include.is_dark %}header-dark{% endif %}">
+  <div class="container">
+    <h1 class="header-logo">
+      <a href="/">
+        YATTEIKI
+      </a>
+    </h1>
+    <nav class="header-navigation">
+      <a href="/" class="header-navigation-element">
+        音声
+      </a>
+      <a href="https://www.youtube.com/channel/UCUB9La53VDXJ76msVSzZdTA" class="header-navigation-element" target="_blank">
+        動画
+      </a>
+      <a href="/yatteikiba/4" class="header-navigation-element">
+        イベント
+      </a>
+    </nav>
   </div>
 </header>

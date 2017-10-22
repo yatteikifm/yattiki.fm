@@ -1,33 +1,51 @@
 .header {
-  background-image: url(/images/header.jpg);
-  background-size: cover;
-  background-position: center;
+  background-color: transparent;
+  font-weight: 800;
+  left: 0;
+  line-height: 2.4rem;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  z-index: 1;
 
-  &-description {
-    color: $color-text-light-secondary;
-    font-size: 0.9rem;
+  &,
+  a {
+    color: $color-text-light-primary;
   }
 
-  &-heading {
-    color: $color-text-light-primary;
-    text-shadow: 0 1px 5px black;
-    font-size: 2.5rem;
-    font-weight: 500;
+  &,
+  a {
+    &:focus,
+    &:hover {
+      color: $color-text-light-secondary;
+    }
+  }
 
+  &-dark {
+    &,
     a {
-      &,
-      &:active,
+      color: $color-text-dark-primary;
+    }
+
+    &,
+    a {
       &:focus,
       &:hover {
-        color: inherit;
+        color: $color-text-dark-secondary;
       }
     }
   }
 
-  &-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 100%;
-    padding-bottom: 96px;
-    padding-top: 96px;
+  &-logo {
+    float: left;
+  }
+
+  &-navigation {
+    float: right;
+
+    &-element {
+      display: inline-block;
+      padding: 0 1rem;
+    }
   }
 }

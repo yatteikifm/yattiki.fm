@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang={{ site.language }}>
-  <head>
-    <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta name="twitter:image" content="{{ site.url }}{{ page.image }}" />
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}" />
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
-    <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:type" content="blog" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
-    <link rel="stylesheet" href="/css/yatteikiba.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelementplayer.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/css/swiper.min.css">
-  </head>
+  {% include head.html css_name="yatteikiba" %}
   <body>
-    <main class="main">
+    {% include header.html is_dark="foo" %}
+    <main class="main main-yatteikiba">
+      <div class="container">
+        <div class="section section-top section1">
+          <img src="/images/yatteikiba/main-visual.jpg" />
+          <p>
+            月に一度のやっていきたい人たちのためのもくもく作業会場、やっていき場を開催します。
+            やっていき場とは、月に1度開かれるみんなの作業場です。場所は板橋区下赤塚。
+            近所に商店街や銭湯が並ぶ情緒溢れる下町にある、築六十年の古民家を少しずつ改装して作った場所です。
+          </p>
+        </div>
+      </div>
       {{ content }}
+      <div class="section3">
+        <div class="container">
+          <h3>前回の様子</h3>
+          <div class="article-slideshow">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                {% for slideshow in page.slideshows %}
+                  <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                      <img src="{{ slideshow }}">
+                    </div>
+                  </div>
+                {% endfor %}
+              </div>
+             <div class="swiper-pagination swiper-pagination-white"></div>
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section4">
+        <h3>アクセス</h3>
+        <div id="access-map"></div>
+        <div class="container">
+          <div class="access-text">
+            <p>〒175-0092</p>
+            <p>東京都板橋区赤塚1-32-10</p>
+            <div class="access-text-train">
+            東武東上線: 下赤塚駅<br>
+            地下鉄副都心線/地下鉄有楽町線: 地下鉄赤塚駅<br>
+            それぞれ徒歩7分程度
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="yatteikiba-footer">
+        <div class="footer-text">
+          協賛: <a href="/">yatteiki.fm</a>
+        </div>
+      </footer>
+      <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+      <script>
+        function initMap() {
+          var uluru = {lat: 35.773448, lng: 139.647980};
+          var map = new google.maps.Map(document.getElementById('access-map'), {
+            zoom: 15,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnCsH4YJ2VfAndzEgg0-sO_POwoJ8eBSA&callback=initMap"></script>
+      <script>
+      new Swiper('.swiper-container', {
+        zoom: true,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+      });
+      </script>
     </main>
   </body>
 </html>
