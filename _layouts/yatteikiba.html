@@ -36,6 +36,7 @@
           </div>
         </div>
       </div>
+      {% if page.is_location_shown %}
       <div class="section4">
         <h3>アクセス</h3>
         <div id="access-map"></div>
@@ -51,6 +52,7 @@
           </div>
         </div>
       </div>
+      {% endif %}
       <footer class="yatteikiba-footer">
         <div class="footer-text">
           協賛: <a href="/">yatteiki.fm</a>
@@ -60,6 +62,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/2.23.4/mediaelement-and-player.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.0/js/swiper.min.js"></script>
+      {% if page.is_location_shown %}
       <script>
         function initMap() {
           var uluru = {lat: 35.773448, lng: 139.647980};
@@ -74,6 +77,7 @@
         }
       </script>
       <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnCsH4YJ2VfAndzEgg0-sO_POwoJ8eBSA&callback=initMap"></script>
+      {% endif %}
       <script>
       new Swiper('.swiper-container', {
         zoom: true,
