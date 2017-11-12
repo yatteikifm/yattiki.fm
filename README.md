@@ -1,19 +1,25 @@
 # yatteikifm.github.io
 
-The source that powers https://yatteiki.fm.
+https://yatteiki.fm のソースコード。
 
-![image](/images/header.jpg)
+## ローカル環境での開発方法
 
-## ローカル環境での試し方
+### 事前準備
 
-Ruby 2.3 以上と Bundler を予めインストールしておいた状態で、各種 Gem をインストールします。
+Docker をインストールしてください。本 README 執筆時点でバージョン 17.09 での動作を確認しています。
 
-```bash
-bundle install
-```
+### 起動
 
-依存関係に含まれている Jekyll を使って、ローカル環境に Web サーバを立てます。
+以下のコマンドを実行してください。
 
 ```bash
-bundle exec jekyll serve
+docker-compose up
 ```
+
+準備ができると http://localhost:4000 にアクセスできるようになります。
+mp3 ファイルの容量が大きく、初回起動時のビルドに時間が掛かるため、注意してください。
+
+## デプロイ方法
+
+master ブランチに push することで、自動的に Web サイトに反映されます。
+反映されるまでに、数十秒から数分程度掛かる場合があります。
