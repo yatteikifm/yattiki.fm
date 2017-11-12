@@ -53,6 +53,8 @@ description: 個人開発者達がやっていくPodcast
 description_long: ものづくり、仕事、生活などをやっていく話題を中心に、いま現在やっている個人開発者達が話す、やっていき手のためのPodcast
 email: soramugi.chika@gmail.com
 exclude:
+  - docker
+  - docker-compose.yml
   - Gemfile
   - Gemfile.lock
   - README.md
