@@ -49,8 +49,8 @@ actors:
     url: https://twitter.com/ntddk
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
-description: 個人開発者達がやっていくPodcast
-description_long: ものづくり、仕事、生活などをやっていく話題を中心に、いま現在やっている個人開発者達が話す、やっていき手のためのPodcast
+description: やっていき手のためのラジオ
+description_long: ものづくり、仕事、生活などをやっていく話題を中心に、いま現在やっている人達が話す、やっていき手のためのラジオ
 email: soramugi.chika@gmail.com
 exclude:
   - docker

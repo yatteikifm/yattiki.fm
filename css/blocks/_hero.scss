@@ -5,14 +5,12 @@
   color: $color-text-light-primary;
 
   &-description {
-    color: $color-text-light-secondary;
-    font-size: 1.3rem;
+    line-height: 1.5;
   }
 
   &-heading {
     font-size: 2.5rem;
-    font-weight: 500;
-    text-shadow: 0 1px 5px black;
+    font-weight: 600;
 
     a {
       &,
@@ -25,7 +23,7 @@
   }
 
   &-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
     padding-bottom: 8rem;
     padding-top: 10rem;

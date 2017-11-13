@@ -1,18 +1,6 @@
 .article {
-  &-header {
-    margin-bottom: 24px;
-
-    &-note {
-      font-size: 0.9rem;
-    }
-  }
-
   &-slideshow {
     max-width: 600px;
     height: 400px;
-  }
-
-  audio {
-    width: 100%;
   }
 }

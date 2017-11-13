@@ -10,10 +10,6 @@
     }
   }
 
-  a {
-    text-decoration: underline;
-  }
-
   > code {
     background-color: rgba(0, 0, 0, 0.04);
     border-radius: 3px;
@@ -26,6 +22,16 @@
     &::before {
       content: "\00a0";
       letter-spacing: -0.2rem;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+
+    &:focus,
+    &:hover {
+      color: $color-text-link;
     }
   }
 
@@ -133,13 +139,8 @@
   h5,
   h6 {
     line-height: 1.25;
-    margin-bottom: 16px;
-    margin-top: 24px;
-  }
-
-  h1,
-  h2 {
-    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
   }
 
   h1 {
@@ -148,6 +149,7 @@
 
   h2 {
     font-size: 1.3rem;
+    font-weight: 600;
     margin-top: 50px;
   }
 
@@ -195,6 +197,7 @@
   }
 
   ul {
+    font-size: 0.9rem;
     list-style-type: disc;
   }
 

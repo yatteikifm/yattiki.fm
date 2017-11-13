@@ -7,7 +7,7 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: #1c3c7c;
+    color: $color-text-link;
     text-decoration: none;
   }
 }

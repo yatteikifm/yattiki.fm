@@ -1,3 +1,11 @@
+.color-inherit {
+  &,
+  &:focus,
+  &:hover {
+    color: inherit;
+  }
+}
+
 .text {
   &-center {
     text-align: center;

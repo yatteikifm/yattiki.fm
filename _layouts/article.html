@@ -6,21 +6,21 @@
     {% include header.html %}
     <main class="main">
       <div class="container">
-        <article class="article card">
-          <header class="article-header card-header text-center">
+        <article class="card">
+          <header class="card-header">
             <h1 class="card-heading">
               <a href="{{ page.url }}">
                 {{ page.title }}
               </a>
             </h1>
-            <div class="article-header-note">
+            <div class="card-note">
               {{ page.date | date: "%Y年%m月%d日" }}
             </div>
           </header>
-          <section class="card-body markdown">
-            <p>
+          <section class="card-body">
+            <div class="card-audio-wrapper">
               <audio
-                class="mejs-player"
+                class="card-audio mejs-player"
                 controls=""
                 data-mejsoptions='{"alwaysShowControls": true, "alwaysShowHours": true, "enableAutosize": true, "features": ["playpause", "progress", "current", "duration", "volume", "speed"]}'
                 preload="auto"
@@ -28,59 +28,56 @@
                 width="100%"
               >
               </audio>
-            </p>
-            <p class="text-right">
-              <small>
+              <div class="card-download">
                 <a href="{{ page.audio_file_path }}">MP3ファイルをダウンロード</a>
-              </small>
-            </p>
-            <h2>
-              内容紹介
-            </h2>
-            <p>
+              </div>
+            </div>
+            <p class="card-description">
               {{ page.description }}
             </p>
-            <h2>
-              出演者
-            </h2>
-            <div class="article-actors">
+            <div class="card-actors row">
               {% for actor_id in page.actor_ids %}
                 {% assign actor = site.actors[actor_id] %}
-                <a href="{{ actor.url }}" class="actor" target="_blank">
-                  <img src="{{ actor.image_url }}" alt="{{ actor.name }}" class="actor-image" width="72" height="72">
-                  <br>
-                  {{ actor.name }}
-                </a>
+                <div class="column-small-4">
+                  <a href="{{ actor.url }}" class="card-actor" target="_blank">
+                    <img src="{{ actor.image_url }}" alt="{{ actor.name }}" class="card-actor-icon" width="72" height="72">
+                    <div class="card-actor-name">
+                      {{ actor.name }}
+                    </div>
+                  </a>
+                </div>
               {% endfor %}
             </div>
-            {% if content contains '<a href=' %}
-                {{ content | replace:'<a','<a target="_blank"' }}
-            {% else %}
-                {{ content }}
-            {% endif %}
-            {% if page.slideshows %}
-              <h2>
-                スライドショー
-              </h2>
-              <div class="article-slideshow">
-                <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                    {% for slideshow in page.slideshows %}
-                      <div class="swiper-slide">
-                        <div class="swiper-zoom-container">
-                          <img src="{{ slideshow }}">
+            <div class="markdown">
+              {% if content contains '<a href=' %}
+                  {{ content | replace:'<a','<a target="_blank"' }}
+              {% else %}
+                  {{ content }}
+              {% endif %}
+              {% if page.slideshows %}
+                <h2>
+                  スライドショー
+                </h2>
+                <div class="article-slideshow">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                      {% for slideshow in page.slideshows %}
+                        <div class="swiper-slide">
+                          <div class="swiper-zoom-container">
+                            <img src="{{ slideshow }}">
+                          </div>
                         </div>
-                      </div>
-                    {% endfor %}
+                      {% endfor %}
+                    </div>
+                   <div class="swiper-pagination swiper-pagination-white"></div>
+                   <div class="swiper-button-prev"></div>
+                   <div class="swiper-button-next"></div>
                   </div>
-                 <div class="swiper-pagination swiper-pagination-white"></div>
-                 <div class="swiper-button-prev"></div>
-                 <div class="swiper-button-next"></div>
                 </div>
               </div>
             {% endif %}
           </section>
-          <footer class="article-footer">
+          <footer class="card-footer">
             <a class="twitter-share-button" href="https://twitter.com/intent/tweet?hashtags={{ site.hashtag }}&url={{ site.url }}{{ page.url }}&text={{ page.title }}">
               Tweet
             </a>
