@@ -1,0 +1,58 @@
+---
+actor_ids:
+  - mizchi
+  - itopoid
+title: 動画
+---
+
+<!DOCTYPE html>
+<html lang={{ site.language }}>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+    <main>
+      <section class="section-tv">
+        <div class="container">
+          <img src="/images/tv-logo.png">
+        </div>
+      </section>
+      <section class="main">
+        <div class="container">
+          <div class="card">
+            <div class="card-header">
+              <h1 class="card-heading">
+                第1回 mizchi × itopoid
+              </h1>
+              <div class="card-note">
+                2017年10月21日
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-movie">
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/tYXZn8lbd4k?rel=0" frameborder="0" gesture="media" allowfullscreen></iframe>
+              </div>
+              <p class="card-description">
+                React の国内第一人者 mizchi と若手クリエイター itopoid が送る、ふんわりガチ目のトーク番組！<br class="hidden-extra-small">
+                初回は、mizchi の Twitter 凍結問題をメインに様々な話題に切り込みます！
+              </p>
+              <div class="card-actors row">
+                {% for actor_id in page.actor_ids %}
+                  {% assign actor = site.actors[actor_id] %}
+                  <div class="column-small-4">
+                    <a href="{{ actor.url }}" class="card-actor" target="_blank">
+                      <img src="{{ actor.image_url }}" alt="{{ actor.name }}" class="card-actor-icon" width="72" height="72">
+                      <div class="card-actor-name">
+                        {{ actor.name }}
+                      </div>
+                    </a>
+                  </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    {% include footer.html %}
+  </body>
+</html>

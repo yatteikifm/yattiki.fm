@@ -47,6 +47,10 @@ actors:
     image_url: /images/actors/ntddk.jpg
     name: ntddk
     url: https://twitter.com/ntddk
+  mizchi:
+    image_url: /images/actors/mizchi.jpg
+    name: mizchi
+    url: https://twitter.com/mizchi
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: やっていき手のためのラジオ
