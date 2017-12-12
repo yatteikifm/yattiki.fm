@@ -51,6 +51,10 @@ actors:
     image_url: /images/actors/mizchi.jpg
     name: mizchi
     url: https://twitter.com/mizchi
+  geta6:
+    image_url: /images/actors/geta6.png
+    name: geta6
+    url: https://twitter.com/geta6
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: やっていき手のためのラジオ
