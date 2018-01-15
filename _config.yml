@@ -79,3 +79,4 @@ sass:
 timezone: Asia/Tokyo
 title: yatteiki.fm
 url: https://yatteiki.fm
+future: false
