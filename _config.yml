@@ -55,6 +55,18 @@ actors:
     image_url: /images/actors/geta6.png
     name: geta6
     url: https://twitter.com/geta6
+  mochilon:
+    image_url: /images/actors/mochilon.jpg
+    name: mochilon
+    url: https://twitter.com/mochilon
+  ymrl:
+    image_url: /images/actors/ymrl.png
+    name: ymrl
+    url: https://twitter.com/ymrl
+  sageszk:
+    image_url: /images/actors/sageszk.jpg
+    name: sageszk
+    url: https://twitter.com/sageszk
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: やっていき手のためのラジオ
