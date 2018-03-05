@@ -67,6 +67,10 @@ actors:
     image_url: /images/actors/sageszk.jpg
     name: sageszk
     url: https://twitter.com/sageszk
+  unecochan:
+    image_url: /images/actors/unecochan.jpg
+    name: unecochan
+    url: https://twitter.com/unecochan
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: やっていき手のためのラジオ
