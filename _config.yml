@@ -71,6 +71,10 @@ actors:
     image_url: /images/actors/unecochan.jpg
     name: unecochan
     url: https://twitter.com/unecochan
+  ainokoe:
+    image_url: /images/actors/ainokoe.jpg
+    name: ainokoe
+    url: https://twitter.com/yatteikifm
 android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed.xml
 author: やっていき手
 description: やっていき手のためのラジオ
