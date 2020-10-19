@@ -93,7 +93,6 @@ keywords: tech,technology,yatteiki,programming,mobile,web,development,developer,
 language: ja
 markdown: kramdown
 permalink: /episode/:title
-pushdog_subscription_url: https://push.dog/subscribe?url=https%3A%2F%2Fyatteiki.fm%2Ffeed.xml
 sass:
   sass_dir: css
 timezone: Asia/Tokyo
