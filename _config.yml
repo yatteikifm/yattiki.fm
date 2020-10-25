@@ -79,7 +79,7 @@ android_podcast_subscription_url: http://subscribeonandroid.com/yatteiki.fm/feed
 author: やっていき手
 description: やっていき手のためのラジオ
 description_long: ものづくり、仕事、生活などをやっていく話題を中心に、いま現在やっている人達が話す、やっていき手のためのラジオ
-email: soramugi.chika@gmail.com
+email: yatteikifm@gmail.com
 exclude:
   - docker
   - docker-compose.yml
