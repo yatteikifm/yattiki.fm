@@ -89,7 +89,7 @@ exclude:
   - vendor
 hashtag: yatteikifm
 itunes_podcast_url: https://itunes.apple.com/jp/podcast/yatteiki.fm/id1170904671?mt=2
-keywords: tech,technology,yatteiki,programming,mobile,web,development,developer,software
+keywords: tech,technology,yatteiki,programming,mobile,web,development,developer,software,553695
 language: ja
 markdown: kramdown
 permalink: /episode/:title
